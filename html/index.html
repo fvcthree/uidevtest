@@ -8,20 +8,20 @@
     body
     {
         margin: 0px 0px 0px 0px;
-      background: #fff;
-	    background: -moz-linear-gradient(top, #cccccc,  #ffffff); 
-	    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff)); 
-	    filter: progid:DXImageTransform.Microsoft.gradient(StartColorstr='#cccccc', EndColorstr='#ffffff', GradientType=0);
-	    background-position: center top;
-	    background-repeat: repeat-x;
-	    vertical-align: top;
-	    font-family: Arial;
-	    font-size: 14px;
-	    color: #202020;
-	    text-align: left;
-	    height: 100%;
+      	background: #fff;
+	background: -moz-linear-gradient(top, #cccccc,  #ffffff); 
+	background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff)); 
+	filter: progid:DXImageTransform.Microsoft.gradient(StartColorstr='#cccccc', EndColorstr='#ffffff', GradientType=0);
+	background-position: center top;
+	background-repeat: repeat-x;
+	vertical-align: top;
+	font-family: Arial;
+	font-size: 14px;
+	color: #202020;
+	text-align: left;
+	height: 100%;
     }
-    /*.holder centers everything and sets width to 800px which would work well in most resolutions.*/
+    /*.holder centers everything and sets width to 800px which should work well in most resolutions.*/
     .holder
     {
         width: 800px;
@@ -51,9 +51,10 @@
     }
     .shadow
     {
-	    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-	    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-	    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    	/*I added this class to add some depth to the basketball image on non-ie browsers*/
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     }
     .cutline
     {
@@ -162,7 +163,9 @@
         color: #202020;
     }
     </style>
+    <!--Include the JQuery file-->
     <script type='text/javascript' src='https://raw.github.com/fvcthree/uidevtest/master/js/jquery-1.4.min.js'></script>
+    <!--Start the font increase/decrese JQuery function-->
     <script type='text/javascript'>//<![CDATA[
         $(window).load(function () {
             $(document).ready(function () {
