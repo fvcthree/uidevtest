@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Texas puts perfect mark on line at Kansas State</title>
+    <style>
+    /*I normally separate the css but wasn't sure how to do this with github so I included directly on the html file*/
+    body
+    {
+        margin: 0px 0px 0px 0px;
+      background: #fff;
+	    background: -moz-linear-gradient(top, #cccccc,  #ffffff); 
+	    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#ffffff)); 
+	    filter: progid:DXImageTransform.Microsoft.gradient(StartColorstr='#cccccc', EndColorstr='#ffffff', GradientType=0);
+	    background-position: center top;
+	    background-repeat: repeat-x;
+	    vertical-align: top;
+	    font-family: Arial;
+	    font-size: 14px;
+	    color: #202020;
+	    text-align: left;
+	    height: 100%;
+    }
+    /*.holder centers everything and sets width to 800px which would work well in most resolutions.*/
+    .holder
+    {
+        width: 800px;
+        border-style: solid;
+        border-width: 0px;
+        border-collapse: collapse;
+        margin:0 auto;
+    }
+    .navigation
+    {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .headline
+    {
+        /*I know the requirements said 18px but it looked too small compared to the mockup so I increased to 28px*/
+        font: 28px Georgia bold;
+        padding: 10px 0px 10px 0px;
+    }
+    .left
+    {
+        width: 169px;
+        padding-right: 20px;
+        float: left;
+        text-align: left top;
+        font: 12px Arial;
+    }
+    .shadow
+    {
+	    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    }
+    .cutline
+    {
+        padding: 3px 0px 20px 0px;
+        text-align: right;
+        color: #666666;
+        font-size: 12px;
+    }
+    .cutnotes
+    {
+        padding-bottom: 10px;
+    }
+    .right
+    {
+        width: 611px;
+        float: left;
+        text-align: left top;
+        /*With the background gradient place I felt the black text need a little more popup to be easier on the eyes so I added this text-shaddow line which works well in everything except IE*/
+        text-shadow:1px 1px 0px #fff;
+    }
+    #author
+    {
+        font-size: 10px;
+    }
+    #publishdate
+    {
+        font-size: 11px;
+    }
+    .iconholder
+    {
+        float: left;
+        height: 18px;
+        padding: 2px 0px 0px 0px;
+    }
+    .lnkholder
+    {
+        float: left;
+        height: 20px;
+        font-size: 11px;
+        padding: 0px 0px 0px 4px;
+    }
+    a.button_enlarge, a.button_decrease, a.button_comment, a.button_email, a.button_print, a.button_share
+    {
+        display: block;
+        background: url(https://github.com/fvcthree/uidevtest/raw/master/images/sprites.gif) 1117px 13px no-repeat;
+        overflow: hidden;
+    }
+    a.button_enlarge
+    {
+        width:10px;
+        height:10px;
+        background-position: -4px -391px;
+    }
+    a.button_decrease
+    {
+        width:10px;
+        height:10px;
+        background-position: -4px -437px;
+    }
+    a.button_comment
+    {
+        width:11px;
+        height:12px;
+        background-position: -2px -481px;
+    }
+    a.button_email
+    {
+        width:12px;
+        height:10px;
+        background-position: -1px -257px;
+    }
+    a.button_print
+    {
+        width:12px;
+        height:12px;
+        background-position: -1px -301px;
+    }
+    a.button_share
+    {
+        width:13px;
+        height:14px;
+        background-position: -0px -347px;
+    }
+    .navsep
+    {
+        float: left;
+        height: 20px;
+        font-size: 11px;
+        padding: 0px 10px 0px 10px;
+    }
+    #linesep
+    {
+        height: 1px; border-bottom: 1px dotted;
+    }
+    #navholder
+    {
+        padding: 5px 0px 25px 0px;
+    }
+    A:link {text-decoration: none; color: #CC6600; font-weight: bold;}
+    A:visited {text-decoration: none; color: #CC6600; font-weight: bold;}
+    A:active {text-decoration: none; color: #CC6600; font-weight: bold;}
+    A:hover {text-decoration: none; color: #CC6600; font-weight: bold;}
+    a.navlink
+    {
+        font-weight: normal;
+        color: #202020;
+    }
+    </style>
+    <script type='text/javascript' src='https://raw.github.com/fvcthree/uidevtest/master/js/jquery-1.4.min.js'></script>
+    <script type='text/javascript'>//<![CDATA[
+        $(window).load(function () {
+            $(document).ready(function () {
+                $('#increase').show();
+                $('#decrease').hide();
+                $('#fontSizePlus').click(function () {
+                    $('#text').css("font-size", function () {
+                        return parseInt($(this).css('font-size')) + 2 + 'px';
+                    });
+                    $('#increase').hide();
+                    $('#decrease').show();
+                });
+                $('#fontSizeMinus').click(function () {
+                    $('#text').css("font-size", function () {
+                        return parseInt($(this).css('font-size')) - 2 + 'px';
+                    });
+                    $('#increase').show();
+                    $('#decrease').hide();
+                });
+            });
+        });//]]>
+    </script>
+</head>
+<body>
+    <div class="holder navigation">
+        <a href="#">Home</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">Sports</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">Longhorns</a>
+    </div>
+    <div class="holder headline">
+        Texas puts perfect mark on line at Kansas State
+    </div>
+    <div class="holder">
+        <div class="left">
+            <div><img src="https://github.com/fvcthree/uidevtest/raw/master/images/basketball.jpg" alt="Texas puts perfect mark on line at Kansas State" class="shadow" /></div>
+            <div class="cutline">
+                Laura Skelding/AMERICAN-STATESMAN
+            </div>
+            <div class="cutnotes">
+                <div class="iconholder"><a href="#" class="button_enlarge"></a></div>
+                <div class="lnkholder"><a href="#">Enlarge Photo</a></div>
+            </div>
+            <div style="clear: both;">
+                Texas senior forward Damion James and freshman guard Avery Bradley will be on alert against Kansas State just as they were against Texas A&M's David Loubeau, center, on Saturday.
+            </div>
+        </div>
+        <div class="right">
+            By <a href="#">Mark Rosner</a><br />
+            <span id="author">AMERICAN-STATESMAN STAFF</span>
+            <p id="publishdate">
+            Updated: 11:17 p.m. Sunday, Jan. 17, 2010<br />
+            Published: 6:57 p.m. Sunday, Jan. 17, 2010
+            </p>
+            <div id="linesep"></div>
+            <div id="navholder">
+                <div class="iconholder"><a href="#" class="button_comment"></a></div>
+                <div class="lnkholder"><a href="#" class="navlink">Post a Comment</a></div>
+                <div class="navsep">|</div>
+                <div class="iconholder"><a href="#" class="button_email"></a></div>
+                <div class="lnkholder"><a href="#" class="navlink">Email</a></div>
+                <div class="navsep">|</div>
+                <div class="iconholder"><a href="#" class="button_print"></a></div>
+                <div class="lnkholder"><a href="#" class="navlink">Print</a></div>
+                <div class="navsep">|</div>
+                <div class="iconholder"><a href="#" class="button_share"></a></div>
+                <div class="lnkholder"><a href="#" class="navlink">Share</a></div>
+                <div class="navsep">|</div>
+                <div id="changeFont">
+                    <div id="increase">
+                        <div class="iconholder"><a href="#" class="button_enlarge"></a></div>
+                        <div class="lnkholder"><a href="#" id="fontSizePlus" class="navlink">Larger Type</a></div>
+                    </div>
+                    <div id="decrease">
+                        <div class="iconholder"><a href="#" class="button_decrease"></a></div>
+                        <div class="lnkholder"><a href="#" id="fontSizeMinus" class="navlink">Smaller Type</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="text" style="font-size:14px">
+                MANHATTAN, KAN. - The Longhorns, three games into their defense of the No. 1 ranking, come to a place where the opponent is formidable, the crowd is raucous, and the referees might just wear out their whistles.<br /><br />
+                They come to face No. 13 Kansas State, an in-your-face team that reflects the personality of its coach, Frank Martin. The Wildcats spend much of their games fouling and shooting free throws.<br /><br />
+                All 12,528 tickets have been sold, and coach Rick Barnes hopes the Longhorns can summon the fortitude Texas A&M showed in the packed Erwin Center on Saturday during a 72-67 loss to the Longhorns in overtime.<br /><br />
+                "It's gonna be flipped Monday," Barnes said. "We're not gonna have the house. I hope we go in with the same intensity A&M brought."<br /><br />
+                Kansas State has 13 consecutive victories at home, its longest streak in Manhattan since winning 20 straight in 1981-82.<br /><br />
+                The Longhorns and Wildcats would not be called rivals, but you couldn't tell by their games in recent seasons.<br /><br />
+                Barnes is 8-4 against Kansas State. The Longhorns have won four of the last six, but five of those games were decided by four points or fewer. Texas has won the last two in Manhattan. K-State has a two-game winning steak in Austin.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
